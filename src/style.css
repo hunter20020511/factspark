@@ -1,0 +1,212 @@
+h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: "League Gothic", sans-serif;
+  color: whitesmoke;
+}
+.fact {
+  font-size: larger;
+  line-height: 1.5;
+  font-family: "sono", sans-serif;
+  margin-bottom: 14px;
+  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: auto;
+  gap: 20px;
+  background-color: rgb(15, 16, 16);
+}
+.hidden {
+  display: none !important; /*hides form*/
+}
+@media (max-width: 767px) {
+  /*CSS media query that targets devices with a maximum width of 767 pixels (typically smaller devices like smartphones or tablets)*/
+  .fact {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .form {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.info {
+  text-align: right;
+}
+
+.tag {
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-color: #191b22;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(253, 253, 255);
+  padding: 40px;
+}
+.butt1 {
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-family: inherit;
+  border-radius: 50px;
+  padding: 3px 6px;
+  color: inherit;
+  background-color: rgb(169, 53, 53);
+}
+.butt2 {
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-family: inherit;
+  border-radius: 50px;
+  padding: 3px 6px;
+  color: inherit;
+  background-color: rgb(136, 6, 6);
+}
+.butt3 {
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-family: inherit;
+  border-radius: 50px;
+  padding: 3px 6px;
+  color: inherit;
+  background-color: rgb(193, 59, 169);
+}
+.form {
+  background-color: rgb(15, 16, 16);
+  margin-bottom: 40px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+* {
+  color: fafaf9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+.bulb {
+  padding: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+.buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0; /*by setting  flex shrink to 0 ,element will not shrink be allowed to shrink resulting in parallel emojis inside buttons*/
+}
+.main {
+  display: grid; /*used for radiant colors*/
+  grid-template-columns: 250px 1fr;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.source {
+  color: red;
+  text-decoration: none;
+  margin-left: 13px;
+  transition: 0.6s;
+}
+.source:hover {
+  color: cyan;
+  animation: infinite;
+}
+.btn:hover {
+  transform: scale(107%);
+}
+.btn {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: auto;
+  width: 90%;
+  transition: 0.5s;
+  border-radius: 10% / 50%;
+  cursor: pointer; /*changes pointer to hand upon hovering*/
+}
+.btn_all:hover {
+  transform: scale(107%); /*transdforms all button*/
+  transform: rotate(-3deg);
+}
+.btn_ball:hover {
+  transform: scale(107%); /*transforms wanna share fact button*/
+  transform: rotate(3deg);
+}
+.btn_all {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: auto;
+  background-image: linear-gradient(120deg, red, purple, cyan, blue, yellow);
+  color: inherit; /*inherits background color*/
+  margin-top: 16px;
+  width: 90%;
+  transition: 1s; /*adds transiton to all facts button*/
+  border-radius: 10px 100px / 120px; /*makes "all" button rounded*/
+  cursor: zoom-in;
+}
+.btnlarge {
+  font-size: 30px;
+  padding: 20px 32px 17px;
+  transition: 0.5s; /*adds transiton to submit and wanna share button*/
+  border-radius: 10px 100px / 120px; /*makes wanna share and submit button rounded*/
+}
+.category {
+  margin-bottom: 12px; /*defines space between category*/
+}
+.btn_ball {
+  border: none;
+  padding: auto;
+  text-transform: uppercase;
+  font-family: "Coiny", sans-serif;
+  background-image: linear-gradient(120deg, red, purple, cyan, blue, yellow);
+  color: inherit;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: rgb(15, 16, 16);
+  transition: 0.4s;
+}
+.form input,
+form select {
+  border: none;
+  border-radius: 50px;
+  padding: 16px;
+  background-color: rgb(58, 63, 63);
+  color: inherit;
+  font-family: inherit;
+  display: flex;
+  flex-grow: 1;
+}
+.form span {
+  font-weight: 600px;
+  font-size: 19px;
+}
